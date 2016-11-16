@@ -27,18 +27,18 @@ public class StockQuote {
     public String getDowJonesStock(@WebParam(name = "stockSymbol") String stockSymbol) {
         String answer = "Language not supported.";
         HashMap dowJonesStockHM = new HashMap();
-        dowJonesStockHM.put("MMM", "1");
-        dowJonesStockHM.put("AXP", "59.50");
-        dowJonesStockHM.put("AAPL", "108.66");
-        dowJonesStockHM.put("BA", "127.88");
-        dowJonesStockHM.put("CAT", "74.35");
-        dowJonesStockHM.put("CVX", "96.33");
-        dowJonesStockHM.put("CSCO", "27.69");
-        dowJonesStockHM.put("KO", "46.87");
-        dowJonesStockHM.put("DIS", "96.42");
-        dowJonesStockHM.put("DD", "63.20");
-        dowJonesStockHM.put("XOM", "83.21");
-        dowJonesStockHM.put("GE", "30.79");
+        dowJonesStockHM.put("MMM", "171.95");
+        dowJonesStockHM.put("AXP", "71.45");
+        dowJonesStockHM.put("AAPL", "109.94");
+        dowJonesStockHM.put("BA", "146.38");
+        dowJonesStockHM.put("CAT", "93.25");
+        dowJonesStockHM.put("CVX", "108.14");
+        dowJonesStockHM.put("CSCO", "31.67");
+        dowJonesStockHM.put("KO", "41.26");
+        dowJonesStockHM.put("DIS", "98.53");
+        dowJonesStockHM.put("DD", "68.8");
+        dowJonesStockHM.put("XOM", "85.93");
+        dowJonesStockHM.put("GE", "30.61");
         if (dowJonesStockHM.containsKey(stockSymbol.toUpperCase())) {
             System.out.println("ans1 for " + stockSymbol + " is " + dowJonesStockHM.get(stockSymbol.toUpperCase()));
             answer = (String) dowJonesStockHM.get(stockSymbol.toUpperCase());
